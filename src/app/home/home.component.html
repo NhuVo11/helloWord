@@ -1,5 +1,12 @@
-<p>My name is {{name}}</p>
+<p>My name is  <span  class="overAge"> {{name}}</span></p>
 <p>My age is {{age}} tuổi</p>
 
 <span *ngIf="age < 18" class="underAge">Bạn dưới 18 tuổi</span>
-<span *ngIf="age >= 18" class="overAge">Bạn đã đủ điều kiện!</span>
+<span *ngIf="age >= 18" class="overAge">Bạn đã đủ điều kiện!</span><br/>
+
+<input [(ngModel)]="name"/>
+<div>
+    <select>
+        <option *ngFor="let fruit of fruits">{{fruit}}</option>
+    </select>
+</div>
